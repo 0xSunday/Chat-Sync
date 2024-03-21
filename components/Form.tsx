@@ -46,6 +46,7 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
       console.log(result);
       toast.success("Tweet created");
       setBody("");
+      setImage("");
 
       mutatePosts();
       mutatePost();
@@ -54,7 +55,7 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
     } finally {
       setIsLoading(false);
     }
-  }, [body, mutatePosts, isComment, postId, mutatePost]);
+  }, [body, mutatePosts, isComment, postId, mutatePost, image]);
 
   return (
     <div className="border-b-[1px] border-neutral-800 px-5 py-2">
@@ -65,7 +66,7 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
           </div>
 
           <div className="w-full">
-            {!isComment && ( 
+            {!isComment && (
               <PostImages
                 value={image}
                 disabled={isLoading}
