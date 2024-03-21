@@ -41,9 +41,9 @@ const BottomBar = () => {
     },
   ];
   return (
-    <div className="md:hidden flex relative  bg-black">
-      <div className="absolute bottom-0 right-0 left-0">
-        <div className="space-y-2 px-2  pb-8 lg:w-[230px] flex flex-row justify-around  ">
+    <div className=" z-10 md:hidden flex relative  bg-black  border-t-1 border-gray-400">
+      <div className="fixed bottom-0 right-0 left-0 w-full bg-black ">
+        <div className="space-y-2 px-2  pb-2 lg:w-[230px] flex flex-row items-center justify-around  ">
           {items.map((item) => (
             <BottemBarItem
               key={item.href}

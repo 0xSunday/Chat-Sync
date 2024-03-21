@@ -43,7 +43,7 @@ const BottemBarItem: React.FC<SidebarItemProps> = ({
   }, [router, href, auth, loginModal, onClick, currentUser]);
 
   return (
-    <div onClick={handleClick} className="flex flex-row items-center">
+    <div onClick={handleClick} className="flex flex-row justify-center items-center ">
       <div
         className="
         relative
@@ -53,7 +53,7 @@ const BottemBarItem: React.FC<SidebarItemProps> = ({
         flex
         items-center
         justify-center 
-        p-4
+        px-4
         hover:bg-slate-300 
         hover:bg-opacity-10 
         cursor-pointer 
