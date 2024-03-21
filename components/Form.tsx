@@ -65,7 +65,7 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
           </div>
 
           <div className="w-full">
-            {!isComment && ( // Render ImageUpload only for posts, not comments
+            {!isComment && ( 
               <PostImages
                 value={image}
                 disabled={isLoading}

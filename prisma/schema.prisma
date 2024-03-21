@@ -30,7 +30,6 @@ model User {
   comments      Comment[]
   notifications Notification[]
 }
-
 model Post {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
   body      String
