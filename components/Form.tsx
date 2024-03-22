@@ -71,7 +71,7 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
                 value={image}
                 disabled={isLoading}
                 onChange={(image) => setImage(image)}
-                label="Upload profile image"
+                label="Post Image"
               />
             )}
             <hr
