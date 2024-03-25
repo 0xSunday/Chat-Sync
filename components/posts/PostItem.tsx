@@ -94,15 +94,11 @@ const PostItem: React.FC<PostItemProps> = ({ data = {}, userId }) => {
                 md:block
             "
             >
-
-
               @{data.user.username}
             </span>
             <span className="text-neutral-500 text-sm">{createdAt}</span>
           </div>
           <div className="text-white ">{data.body}</div>
-
-
 
           <div>
             {data.image && (
