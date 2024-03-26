@@ -35,7 +35,7 @@ const Sidebar = () => {
     {
       icon: MdMessage,
       label: "Message",
-      href: `/`,
+      href: `/messages`,
       auth: true,
     },
   ];

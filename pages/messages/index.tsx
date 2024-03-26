@@ -1,3 +1,4 @@
+import EmptyState from "@/components/EmptyState";
 import Header from "@/components/Header";
 import NotificationsFeed from "@/components/NotificationsFeed";
 import useCurrentUser from "@/hooks/useCurrentUser";
@@ -23,13 +24,12 @@ export async function getServerSideProps(context: NextPageContext) {
   };
 }
 
-const Notifications = () => {
+const index = () => {
   return (
-    <>
-      <Header showBackArrow label="Notifications" />
-      <NotificationsFeed />
-    </>
+    <div className="hidden lg:block text-white ">
+      <EmptyState />
+    </div>
   );
 };
 
-export default Notifications;
+export default index;

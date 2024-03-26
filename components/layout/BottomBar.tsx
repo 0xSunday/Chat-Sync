@@ -35,7 +35,7 @@ const BottomBar = () => {
 
     {
       icon: MdMessage,
-      label: "Message",
+      label: "Messages",
       href: `/`,
       auth: true,
     },

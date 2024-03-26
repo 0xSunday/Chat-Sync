@@ -44,7 +44,7 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
       const requestData = isComment ? { body } : { body, image };
       const result = await axios.post(url, requestData);
       console.log(result);
-      toast.success("Tweet created");
+      toast.success("Post created");
       setBody("");
       setImage("");
 
