@@ -24,11 +24,13 @@ export default async function handler(
       console.log(currentUser.name);
 
       if (!currentUser?.id || !currentUser?.email) {
-        return new NextResponse("Unauthorized", { status: 400 });
+        // return new NextResponse("Unauthorized", { status: 400 });
+        return res.status(400);
       }
 
       if (isGroup && (!members || members.length < 2 || !name)) {
-        return new NextResponse("Invalid data", { status: 400 });
+        // return new NextResponse("Invalid data", { status: 400 });
+        return res.status(400);
       }
 
       if (isGroup) {
