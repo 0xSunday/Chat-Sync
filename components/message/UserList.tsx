@@ -11,9 +11,7 @@ const UserList = () => {
   const { data: currentUser } = useCurrentUser();
 
   // Filter out your own user data
-  const filteredUsers = users.filter(
-    (user) => user.username !== currentUser.username
-  );
+  const filteredUsers = users.filter((user) => user.username !== currentUser.username);
   // console.log(users);
   return (
     <div className="">
