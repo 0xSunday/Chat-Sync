@@ -11,18 +11,6 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const router = useRouter();
   const [users, setUsers] = useState<any[]>([]);
 
-  // useEffect(() => {
-  //   const fetchUsers = async () => {
-  //     try {
-  //       const fetchedUsers = await getUsers();
-  //       setUsers(fetchedUsers);
-  //     } catch (error) {
-  //       console.error("Error fetching users:", error);
-  //     }
-  //   };
-
-  //   fetchUsers();
-  // }, []);
 
   const inMessageRoute = router.pathname === "/messages";
 

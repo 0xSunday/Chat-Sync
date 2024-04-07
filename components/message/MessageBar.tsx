@@ -11,7 +11,6 @@ const MessageBar: React.FC<DesktopSidebarProps> = () => {
 
   return (
     <div>
-      
       <div
         className="
         
